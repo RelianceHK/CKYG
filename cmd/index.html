@@ -1,0 +1,1231 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>cmd ❤ 1024 </title>
+		<link rel="icon" href="cmd.png">
+		<!-- 在HTML代码中如何把超链接(标签 a)的下划线去掉？_w3cschool
+		https://www.w3cschool.cn/html5/question-10231595.html -->
+		<link rel="stylesheet" href="https://go.choong.net/QPlayer/css/player.css">
+		<!-- 网页悬浮音乐播放器 -->
+		<style type="text/css">
+			<!-- a:link,a:visited{ 
+			text-decoration:none;
+			/*超链接无下划线*/
+			}
+
+			a:hover {
+				text-decoration: underline;
+				/*鼠标放上去有下划线*/
+			}
+			-->
+			a:link
+			{
+			text-decoration:
+			none;
+			color:
+			#ffffff;
+			}
+			/*
+			正常，未访问过的链接
+			*/
+			a:visited
+			{
+			color:
+			#00aaff;
+			}
+			/*
+			用户已访问过的链接
+			*/
+			a:hover
+			{
+			color:
+			#FF00FF;
+			}
+			/*
+			当用户鼠标放在链接上时
+			*/
+			a:active
+			{
+			color:
+			#0000FF;
+			}
+			/*
+			链接被点击的那一刻
+			*/
+		</style>
+
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background: #1B1B1B;
+				font-family: Arial, '微软雅黑', '宋体', sans-serif
+			}
+
+			.alert-box {
+				display: none;
+				position: relative;
+				margin: 96px auto 0;
+				padding: 180px 85px 22px;
+				border-radius: 10px 10px 0 0;
+				background: #FFF;
+				box-shadow: 5px 9px 17px rgba(102, 102, 102, 0.75);
+				width: 286px;
+				color: #FFF;
+				text-align: center
+			}
+
+			.alert-box p {
+				margin: 0
+			}
+
+			.alert-circle {
+				position: absolute;
+				top: -50px;
+				left: 111px
+			}
+
+			.alert-sec-circle {
+				stroke-dashoffset: 0;
+				stroke-dasharray: 735;
+				transition: stroke-dashoffset 1s linear
+			}
+
+			.alert-sec-text {
+				position: absolute;
+				top: 11px;
+				left: 190px;
+				width: 76px;
+				color: #000;
+				font-size: 68px
+			}
+
+			.alert-sec-unit {
+				font-size: 34px
+			}
+
+			.alert-body {
+				margin: 35px -40px
+			}
+
+			.alert-head {
+				color: #242424;
+				font-size: 28px
+			}
+
+			.alert-concent {
+				margin: 25px 0 14px;
+				color: #7B7B7B;
+				font-size: 18px
+			}
+
+			.alert-concent p {
+				line-height: 27px
+			}
+
+			.alert-btn {
+				display: block;
+				border-radius: 10px;
+				background-color: #72C47C;
+				height: 55px;
+				line-height: 55px;
+				width: 186px;
+				color: #FFF;
+				font-size: 20px;
+				text-decoration: none;
+				letter-spacing: 2px
+			}
+
+			.alert-btn:hover {
+				background-color: #6BC2FF
+			}
+
+			.alert-footer {
+				margin: 0 auto;
+				height: 42px;
+				width: 283px
+			}
+
+			.alert-footer-icon {
+				float: left
+			}
+
+			.alert-footer-text {
+				float: left;
+				border-left: 2px solid #EEE;
+				padding: 3px 0 0 5px;
+				height: 40px;
+				color: #7A7A7B;
+				font-size: 12px;
+				text-align: left
+			}
+
+			.alert-footer-text p {
+				color: #7A7A7A;
+				font-size: 22px;
+				line-height: 18px
+			}
+		</style>
+	</head>
+	<body bgcolor="#1B1B1B" text="#ffffff"> <!-- //** align="center" **/ -->
+		<div style="text-align:center"><!-- /* 行内内容居中。 */ -->
+			<br>
+			<li><a href="https://gitee.com/taoste/wiki/blob/master/README.md">README.md · taoste/wiki - 码云 - 开源中国</a>
+			</li>
+			<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+			<u><a href="https://gitee.com/taoste/hosts/blob/Plan.ABZ/cmd.md#" title="cmd.md">CMD</a></u> : <a
+				href="https://gitlab.com/ineo6/hosts/-/raw/master/next-hosts" title="Github 最新hosts-每日更新">
+				<font color="#FC1205"><strong>Next</strong></font>
+			</a> - <a href="https://ineo6.github.io/hosts/" title="GitHub Hosts | hosts">Hosts</a> · <a
+				href="http://blog.yoqi.me/lyq/16489.html" title="2022年 Github 最新hosts-每日更新 | 天问博客">每日更新</a> | <a
+				href="https://gitee.com/taoste/wiki/raw/master/MicrosoftEdgeSetup.exe" title="Microsoft Edge">Microsoft
+				Edge</a>👉<a href="https://github.com/taoste/taoste.github.io/issues" title="https://go.choong.net/i/"><font color="#FC1205"><strong>issues</strong></font></a>
+			<br>
+			<br>
+			<iframe src="https://share.choong.net/tools/shizhong/" width="310" height="310"></iframe>
+			<br>
+			<a href="https://time.is/China" id="time_is_link" rel="nofollow" style="font-size:16px">中国时间:</a>
+			<span id="China_z43d" style="font-size:16px"></span>
+			<script src="//widget.time.is/zh.js"></script>
+			<script>
+				time_is_widget.init({
+					China_z43d: {
+						template: "TIME<br>DATE",
+						date_format: "year年monthnamednum日dname，第week周"
+					}
+				});
+			</script>
+			<br>
+			<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+			<br>
+			<a href="view-source:https://go.choong.net/test/">view-source</a>:<a
+				href="https://go.choong.net/list/">https://go.choong.net/list/</a>
+			<br>
+			<blockquote><code>
+					<pre>
+			< hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
+		</pre>
+				</code></blockquote>
+			<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+			<br>
+			#########################################<br>
+			<br>
+			Win徽标键 + R，打开-->运行：cmd (以管理员身份运行)<br>
+			<br>
+			<code>notepad %SystemRoot%\System32\drivers\etc\hosts</code><br>
+			<br>
+			<code>ipconfig /release</code> 释放ip<br>
+			<br>
+			<code>ipconfig /renew</code> 重新获取ip<br>
+			<br>
+			<code>ipconfig /flushdns</code> 清除系统DNS缓存 <br>
+			#########################################<br>
+			<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+			<br>
+			<li><strong>👇<a href="https://www.52pojie.cn/thread-1788583-1-1.html"
+						title="使用PowerShell查看本机连接过并且已保存的WiFi密码（仅1行代码，全网最简） - 『编程语言讨论求助区』 - 吾爱破解 - LCG - LSG |安卓破解|病毒分析|www.52pojie.cn">使用PowerShell查看本机连接过并且已保存的WiFi密码（仅1行代码，全网最简）</a>：
+				</strong></li>
+			<blockquote>
+				<pre><code>
+			foreach ($item in (netsh wlan show profile|where{ $_ -match "文件"})){netsh wlan show profile name=($item -replace "    所有用户配置文件 : ","") key=clear|where{ $_ -match "    名称|关键内容"}}
+		</code></pre>
+			</blockquote>
+			<br>
+			<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+		</div> <!-- /* 行内内容居中。 */ -->
+		<br>
+		<details>
+			<summary>
+				<div style="text-align:center"> <!-- /* 行内内容居中。 */ -->
+					👉<a href="https://github.com/taoste/Hello-World/tree/master/Tools/Microsoft%20Windows%2010/winget%20%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85"
+						title="Hello-World/Tools/Microsoft Windows 10/winget 工具安装 at master · taoste/Hello-World · GitHub">推荐</a>：
+					<a href="https://github.com/microsoft/winget-cli/releases/" title="原生程序管理：winget 官方安装包">原生程序管理 -
+						winget</a> | <a href="https://www.microsoft.com/zh-cn/Store"
+						title="Windows 应用 - Microsoft 应用商店">Windows 应用 - Microsoft 应用商店</a>
+				</div> <!-- /* 行内内容居中。 */ -->
+				<div style="text-align:center"> <!-- /* 行内内容居中。 */ -->
+					<h1><a href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">使用 winget
+							工具安装和管理应用程序 | Microsoft Learn</a></h1>
+				</div> <!-- /* 行内内容居中。 */ -->
+				<div style="text-align:left"> <!-- /* 行内内容向左侧边对齐。 */ -->
+					<blockquote>
+						👇<B>摘要 | 注意 ：</B>
+				</div> <!-- /* 行内内容居中。 */ -->
+				<div style="text-align:center"> <!-- /* 行内内容居中。 */ -->
+					👉<a
+						href="https://apps.microsoft.com/store/detail/%E5%BA%94%E7%94%A8%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F/9NBLGGH4NNS1?hl=zh-cn&gl=cn">应用安装程序(winget)
+						- Microsoft Store 应用程序</a> | <a
+						href="https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-cn&gl=cn&rtc=1">窗口终端(Windows
+						Terminal) - 微软应用</a>
+				</div> <!-- /* 行内内容居中。 */ -->
+				<div style="text-align:left"> <!-- /* 行内内容向左侧边对齐。 */ -->
+					<P style="text-indent:2em;">winget 命令行工具仅在 Windows 10 1709（版本 16299）或更高版本上受支持。 在你首次以用户身份登录
+						Windows（这会触发 Microsoft Store 将 Windows 程序包管理器注册为异步进程的一部分）之前，winget 工具不可用。
+						如果最近已经以用户身份进行了首次登录，但发现 winget 尚不可用，则可以打开 PowerShell 并输入以下命令来请求此 winget 注册：
+						<strong><code>Add-AppxPackage -RegisterByFamilyName -MainPackage
+								Microsoft.DesktopAppInstaller_8wekyb3d8bbwe</code></strong> 。
+					<p style="text-align: right;">>> "<a href="https://sspai.com/post/72246">一键安装 99
+							个程序，Windows
+							最强软件管理器 - 少数派</a>" | <a href="winstall-ZhiBoPC.bat">winstall.bat</a></p>
+					</p>
+			</summary>
+			<br>
+			<details>
+				<summary>
+					<a href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/source">【1.更新软件源】winget
+						source 命令</a> | 更新所有源:
+					<code>winget source update</code>
+				</summary>
+				更新所有源 && 升级所有应用: <code>winget source update && winget upgrade --all</code>
+			</details>
+			<br>
+			<details>
+				<summary>
+					<a href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/install">【2.安装】install 命令
+						(winget)使用</a> | 安装 QQ 或 微信: <code>winget install QQ</code> || <code>winget install 微信
+					</code><br>
+					安装微软office办公软件: <code>winget install --id=Microsoft.Office -e</code><br>
+					安装腾讯文档: <code>winget install --id=Tencent.Docs -e</code><br>
+					安装开源解压工具: <code>winget install 7-Zip</code><br>
+					安装开源卸载工具: <code>winget install BCUninstaller</code><br>
+					安装开源远程桌面软件: <code>winget install RustDesk</code><br>
+					安装开源直播软件: <code>winget install OBSProject.OBSStudio</code><br>
+					安装 IDM 下载工具: <code>winget install Tonec.InternetDownloadManager</code><br>
+					安装文件搜索工具: <code>winget install voidtools.Everything</code><br>
+					安装微软官方开源效率工具: <code>winget install Microsoft.PowerToys</code><br>
+					安装Chrome浏览器: <code>winget install Google.Chrome</code><br>
+					安装Firefox浏览器: <code>winget install Mozilla.Firefox</code><br>
+					安装开源编辑器Notepad++: <code>winget install Notepad++.Notepad++</code><br>
+					安装开源流程图绘制软件: <code>winget install Draw.io</code><br>
+					安装开源射手影音 SPlayer: <code>winget install Shooter.SPlayerX</code><br>
+					安装万能影音播放器 Spotify: <code>winget install Daum.PotPlayer</code><br>
+					安装开源播放器 VLC media player: <code>winget install VideoLAN.VLC</code><br>
+					安装音乐播放器 Spotify: <code>winget install Spotify.Spotify</code><br>
+					安装BTSync: <code>winget install BitTorrent Sync --version 1.4.111</code><br>
+					<a href="https://winstall.app/apps/ByteDance.JianyingPro">安装</a>抖音剪映软件:<code>winget install --id=ByteDance.JianyingPro  -e</code><br>
+					👇更多：
+				</summary><br>
+				<code>winget install [[-q] \<query>] [\<options>]</code><br><br>
+				如：安装企业微信:<code>winget install 企业微信 </code>或者：Tencent.wechat-work<br>
+				如：安装微信开发者工具:<code>winget install Tencent.WeixinDevTools</code><br>
+				<br>
+				如：安装微软电脑管家: <code>winget search Microsoft.pcmanage</code><br>
+				如：安装VMware虚拟机: <code>winget install VMware.WorkstationPro</code><br>
+				如：安装金山 WPS Office : <code>winget search Kingsoft.WPSOffice</code><br>
+				如：安装金山打字通: <code>winget search Kingsoft.TypeEasy</code><br>
+				<br>
+				如：安装 PikPak 网盘:<code>winget install PikPak</code><br>
+				如：安装Tor浏览器:<code>winget install TorProject.TorBrowser</code><br>
+				如：安装Clash:<code>winget install Fndroid.ClashForWindows</code><br>
+				如：安装OpenVPN:<code>winget install OpenVPNTechnologies.OpenVPNConnect</code><br>
+				如：安装赛风：<code>winget install Psiphon</code><br>
+				如：安装Telegram:<code>winget install Telegram.TelegramDesktop</code><br>
+				<br>
+				如：安装开源SSH连接工具PuTTY:<code>winget install PuTTY.PuTTY</code><br>
+				如：安装开源SFTP文件传输工具:<code>winget install WinSCP.WinSCP</code><br>
+			</details>
+			<blockquote>☞安装包文件下载存放路径：<code>C:\Users\%username%\AppData\Local\Temp\WinGet</code></blockquote>
+			<details>
+				<summary>
+					<a href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/search">【2.1查找】search 命令
+						(winget)使用</a> | 查找360系列: <code>winget search 360 </code> || 查找金山系列: <code>winget search
+						Kingsoft</code><br>
+				</summary><br>
+				如：查询 | edge浏览器命令：<code>winget search edge</code><br>
+				如：查询 | chrome浏览器命令：<code>winget search google.chrome</code><br>
+				如：升级 | edge浏览器命令：<code>winget upgrade edge</code><br>
+				如：升级 | chrome浏览器命令：<code>winget upgrade google.chrome</code><br>
+			</details>
+			<br>
+			<details>
+				<summary>
+					<a href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/upgrade">【3.升级】upgrade 命令
+						(winget)使用</a> | 升级所有应用: <code>winget upgrade --all</code>
+				</summary> <br>
+				【示例1】将升级特定版本的应用程序:
+				<code>winget upgrade powertoys --version 0.69.1</code><br>
+				【示例2】将根据应用程序 ID 升级相应的应用程序:
+				<code>winget upgrade --id Microsoft.PowerToys</code><br>
+				【示例3】升级所有应用:
+				<code>winget upgrade --all</code><br>
+				程序包的版本号无法确定。使用 “<code>--include-unknown</code>”查看所有结果。<br>
+			</details> <br>
+			<details>
+				<summary>
+					<a href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/uninstall">【4.卸载】uninstall
+						命令 (winget)使用</a> | 卸载360安全卫士: <code>winget uninstall 9NBLGGH419H3 </code><br>
+				</summary>
+				<code>winget uninstall [[-q] \<query>] [\<options>]</code> <br>
+			</details>
+			<br>
+			<details>
+				<summary>
+					【Help】WinGet 命令行实用工具可从命令行安装应用程序和其他程序包。
+					<br>
+					<blockquote>使用情况: winget [<命令>] [<选项>]</blockquote>
+				</summary>
+				下列命令有效:<br>
+				install 安装给定的程序包<br>
+				show 显示包的相关信息<br>
+				如：查找阿里云盘：<code>winget show Alibaba.aDrive</code><br>
+				source 管理程序包的来源<br>
+				search 查找并显示程序包的基本信息<br>
+				list 显示已安装的程序包<br>
+				upgrade 显示并执行可用升级<br>
+				uninstall 卸载给定的程序包<br>
+				hash 哈希安装程序的帮助程序<br>
+				validate 验证清单文件<br>
+				settings 打开设置或设置管理员设置<br>
+				features 显示实验性功能的状态<br>
+				export 导出已安装程序包的列表<br>
+				import 安装文件中的所有程序包<br>
+				<br>
+				如需特定命令的更多详细信息，请向其传递帮助参数。 [-?]<br>
+				<br>
+				下列选项可用：<br>
+				-v,--version 显示工具的版本<br>
+				--info 显示工具的常规信息<br>
+				-?,--help 显示选定命令的帮助信息<br>
+				--wait 提示用户在退出前按任意键<br>
+				--logs,--open-logs 打开默认日志位置<br>
+				--verbose,--verbose-logs 启用 WinGet 的详细日志记录<br>
+				--disable-interactivity 禁用交互式提示<br>
+				<br>
+				可在此找到更多帮助: "https://aka.ms/winget-command-help"<br>
+				<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+			</details>
+			<details>
+				<summary>【官方链接】<br>
+					----------------------------------------------------------------------------<br>
+					隐私声明 <a href="https://aka.ms/winget-privacy">https://aka.ms/winget-privacy</a><br>
+					许可协议 <a href="https://aka.ms/winget-license">https://aka.ms/winget-license</a><br>
+					第三方声明 <a href="https://aka.ms/winget-3rdPartyNotice">https://aka.ms/winget-3rdPartyNotice</a><br>
+					主页 <a href="https://aka.ms/winget">https://aka.ms/winget</a><br>
+					Windows 应用商店条款 <a
+						href="https://www.microsoft.com/en-us/storedocs/terms-of-sale">https://www.microsoft.com/en-us/storedocs/terms-of-sale</a><br>
+				</summary>
+				</p>
+				</blockquote>
+			</details>
+		</details>
+		<details>
+			<summary>了解更多👇<br>
+			</summary>
+			<blockquote>
+				<div id="ms--content-well-notifications"></div>
+				<nav id="center-doc-outline" class="doc-outline is-hidden-desktop display-none-print margin-bottom-sm"
+					data-bi-name="intopic toc" role="navigation" aria-label="本文内容">
+					<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">本文内容</h2>
+				</nav>
+				<!-- <content> -->
+				<p>用户可以在 Windows 10 和 Windows 11 计算机上使用 winget 命令行工具来发现、安装、升级、删除和配置应用程序。 此工具是 Windows 程序包管理器服务的客户端接口。
+				</p>
+
+				<h2 id="install-winget">安装 winget</h2>
+				<p>Windows 程序包管理器 winget 命令行工具作为应用安装程序的一部分在 Windows 11 和现代版本的 Windows 10 上提供。</p>
+				<p>可以<a href="https://www.microsoft.com/p/app-installer/9nblggh4nns1#activetab=pivot:overviewtab"
+						data-linktype="external">从 Microsoft Store 获取应用安装程序</a>。 如果已安装，请确保已将其更新为最新版本。</p>
+				<div class="NOTE">
+					<p>注意</p>
+					<p>winget 命令行工具仅在 Windows 10 1709（版本 16299）或更高版本上受支持。 在你首次以用户身份登录 Windows（这会触发 Microsoft Store 将
+						Windows 程序包管理器注册为异步进程的一部分）之前，winget 工具不可用。 如果最近已经以用户身份进行了首次登录，但发现 winget 尚不可用，则可以打开 PowerShell
+						并输入以下命令来请求此 winget 注册：<code>Add-AppxPackage -RegisterByFamilyName -MainPackage
+							Microsoft.DesktopAppInstaller_8wekyb3d8bbwe</code> 。</p>
+				</div>
+				<h3 id="install-winget-preview-version-developers-only">安装 winget 预览版 [仅限开发人员]</h3>
+				<p>WinGet 包含在 Windows 应用安装程序中。 要试用最新的 Windows 程序包管理器功能，可以通过以下方式之一安装预览版：</p>
+				<ul>
+					<li>
+						<p>下载最新的 <a href="https://aka.ms/getwingetpreview" data-linktype="external">winget 预览版</a>。 阅读
+							<a href="https://github.com/microsoft/winget-cli/releases" data-linktype="external">winget
+								预览版发行说明</a>，了解任何新功能。 安装此包将为你提供 WinGet 客户端预览版，但它不会从 Microsoft Store 中启用新预览版的自动更新。
+						</p>
+					</li>
+					<li>
+						<p>使用 Microsoft 帐户 (MSA)、工作、学校或 Azure Active Directory (AAD) 帐户注册 <a
+								href="https://insider.windows.com/understand-flighting" data-linktype="external">Windows
+								预览体验成员开发频道</a>。 Windows 预览体验成员开发频道包括 Microsoft Store 中新预览版的自动更新。</p>
+					</li>
+					<li>
+						<p>使用 Microsoft 帐户 (MSA) 注册 <a href="https://aka.ms/AppInstaller_InsiderProgram"
+								data-linktype="external">Windows 程序包管理器预览体验计划</a>。 在添加你的 Microsoft 帐户 (MSA)
+							后（在你收到电子邮件通知后几天），你将收到 Microsoft Store 中新预览版的自动更新。</p>
+					</li>
+				</ul>
+				<h3 id="install-winget-on-windows-sandbox">在 Windows 沙盒上安装 winget</h3>
+				<p><a href="/zh-cn/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview"
+						data-linktype="absolute-path">Windows 沙盒</a>提供了一个轻型桌面环境，可以安全地独立运行应用程序。 安装在 Windows
+					沙盒环境中的软件保持“沙盒”状态，并独立于主机运行。 Windows 沙盒不包含 winget，也不包含 Microsoft Store 应用，因此你需要从 GitHub 上的 winget
+					版本页下载最新的 winget 包。</p>
+				<p>要在 Windows 沙盒上安装 winget 的稳定版本，请从 Windows PowerShell 命令提示符执行以下步骤：</p>
+				<pre><code class="lang-powershell">$progressPreference = 'silentlyContinue'
+$latestWingetMsixBundleUri = $(Invoke-RestMethod https://api.github.com/repos/microsoft/winget-cli/releases/latest).assets.browser_download_url | Where-Object {$_.EndsWith(&quot;.msixbundle&quot;)}
+$latestWingetMsixBundle = $latestWingetMsixBundleUri.Split(&quot;/&quot;)[-1]
+Write-Information &quot;Downloading winget to artifacts directory...&quot;
+Invoke-WebRequest -Uri $latestWingetMsixBundleUri -OutFile &quot;./$latestWingetMsixBundle&quot;
+Invoke-WebRequest -Uri https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx -OutFile Microsoft.VCLibs.x64.14.00.Desktop.appx
+Add-AppxPackage Microsoft.VCLibs.x64.14.00.Desktop.appx
+Add-AppxPackage $latestWingetMsixBundle
+</code></pre>
+				<p>如果需要程序包管理器的预览版或其他版本，请转到 <a href="https://github.com/microsoft/winget-cli/releases"
+						data-linktype="external">https://github.com/microsoft/winget-cli/releases</a>。 复制你需要的版本 URL
+					并更新上述 URI。</p>
+				<p>有关 Windows 沙盒的详细信息，包括如何安装沙盒以及使用沙盒的预期结果，请参阅 <a
+						href="/zh-cn/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview"
+						data-linktype="absolute-path">Windows 沙盒文档</a>。</p>
+				<h2 id="administrator-considerations">管理员注意事项</h2>
+				<p>安装程序的行为可能会有所不同，具体取决于你是否是以管理员权限运行 <strong>winget</strong>。</p>
+				<ul>
+					<li>
+						<p>在没有管理员权限的情况下运行 <strong>winget</strong> 时，某些应用程序可能会<a
+								href="/zh-cn/windows/security/identity-protection/user-account-control/how-user-account-control-works"
+								data-linktype="absolute-path">要求提升权限</a>才能进行安装。 当安装程序运行时，Windows 会提示你<a
+								href="/zh-cn/windows/security/identity-protection/user-account-control/how-user-account-control-works"
+								data-linktype="absolute-path">提升权限</a>。 如果你选择不提升权限，则应用程序无法进行安装。</p>
+					</li>
+					<li>
+						<p>在管理员命令提示符下运行 <strong>winget</strong> 时，如果应用程序要求你提升权限，你不会看到<a
+								href="/zh-cn/windows/security/identity-protection/user-account-control/how-user-account-control-works"
+								data-linktype="absolute-path">提升权限提示</a>。 以管理员身份运行命令提示符时请务必小心，仅安装你信任的应用程序。</p>
+					</li>
+				</ul>
+				<h2 id="use-winget">使用 winget</h2>
+				<p>安装<strong>应用安装程序</strong>后，可以通过在命令提示符下键入“winget”来运行 <strong>winget</strong>。</p>
+				<p>最常见的使用场景之一是搜索并安装你最喜欢的工具。</p>
+				<ol>
+					<li>
+						<p>若要<a href="search" data-linktype="relative-path">搜索</a>某个工具，请键入 <code>winget search
+								&lt;appname&gt;</code>。</p>
+					</li>
+					<li>
+						<p>确认你需要的工具可用后，可以通过键入 <code>winget install &lt;appname&gt;</code> 来<a href="install"
+								data-linktype="relative-path">安装</a>该工具。 <strong>winget</strong>
+							工具会启动安装程序，将应用程序安装在你的电脑上。
+							<img src="images/install.png" alt="winget 命令行" data-linktype="relative-path" />
+						</p>
+					</li>
+					<li>
+						<p>除了安装和搜索外，<strong>winget</strong> 还提供了许多其他命令，用来<a href="show"
+								data-linktype="relative-path">显示应用程序详细信息</a>，<a href="source"
+								data-linktype="relative-path">更改源</a>以及<a href="validate"
+								data-linktype="relative-path">验证程序包</a>。 若要获取完整的命令列表，请键入 <code>winget --help</code>。
+							<img src="images/help.png" alt="winget help" data-linktype="relative-path" />
+						</p>
+					</li>
+				</ol>
+				<p>一些用户报告了客户端不在其路径上的<a href="https://github.com/microsoft/winget-cli/issues/210"
+						data-linktype="external">问题</a>。</p>
+				<h3 id="commands">命令</h3>
+				<p><strong>winget</strong> 工具的当前预览版支持以下命令。</p>
+				<table>
+					<thead>
+						<tr>
+							<th>命令</th>
+							<th>说明</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>info</td>
+							<td>显示有关系统的元数据（版本号、体系结构、日志位置等）。 有助于进行故障排除。</td>
+						</tr>
+						<tr>
+							<td><a href="install" data-linktype="relative-path">install</a></td>
+							<td>安装指定的应用程序。</td>
+						</tr>
+						<tr>
+							<td><a href="show" data-linktype="relative-path">show</a></td>
+							<td>显示指定应用程序的详细信息。</td>
+						</tr>
+						<tr>
+							<td><a href="source" data-linktype="relative-path">source</a></td>
+							<td>添加、删除和更新 <strong>winget</strong> 工具访问的 Windows 程序包管理器存储库。</td>
+						</tr>
+						<tr>
+							<td><a href="search" data-linktype="relative-path">search</a></td>
+							<td>搜索某个应用程序。</td>
+						</tr>
+						<tr>
+							<td><a href="list" data-linktype="relative-path">list</a></td>
+							<td>显示已安装的包。</td>
+						</tr>
+						<tr>
+							<td><a href="upgrade" data-linktype="relative-path">升级</a></td>
+							<td>升级给定的包。</td>
+						</tr>
+						<tr>
+							<td><a href="uninstall" data-linktype="relative-path">uninstall</a></td>
+							<td>卸载给定的包。</td>
+						</tr>
+						<tr>
+							<td><a href="hash" data-linktype="relative-path">hash</a></td>
+							<td>为安装程序生成 SHA256 哈希。</td>
+						</tr>
+						<tr>
+							<td><a href="validate" data-linktype="relative-path">validate</a></td>
+							<td>验证要提交到 Windows 程序包管理器存储库的清单文件。</td>
+						</tr>
+						<tr>
+							<td><a href="settings" data-linktype="relative-path">设置</a></td>
+							<td>打开设置。</td>
+						</tr>
+						<tr>
+							<td><a href="features" data-linktype="relative-path">功能</a></td>
+							<td>显示试验功能的状态。</td>
+						</tr>
+						<tr>
+							<td><a href="export" data-linktype="relative-path">export</a></td>
+							<td>导出已安装包的列表。</td>
+						</tr>
+						<tr>
+							<td><a href="import" data-linktype="relative-path">import</a></td>
+							<td>将所有包安装到一个文件中。</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="options">选项</h3>
+				<p>winget 工具支持以下选项。</p>
+				<table>
+					<thead>
+						<tr>
+							<th>选项</th>
+							<th>描述</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>-v、--version</strong></td>
+							<td>返回 winget 的当前版本。</td>
+						</tr>
+						<tr>
+							<td><strong>--info</strong></td>
+							<td>提供有关 winget 的所有详细信息，包括许可证链接、隐私声明和配置的组策略。</td>
+						</tr>
+						<tr>
+							<td><strong>-?、--help</strong></td>
+							<td>显示 winget 的其他帮助。</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="supported-installer-formats">支持的安装程序格式</h2>
+				<p>winget 工具支持以下类型的安装程序：</p>
+				<ul>
+					<li>EXE（具有 Silent 和 SilentWithProgress 标志） </li>
+					<li>ZIP</li>
+					<li>INNO</li>
+					<li>NULLSOFT</li>
+					<li>MSI</li>
+					<li>APPX</li>
+					<li>MSIX</li>
+					<li>BURN</li>
+					<li>PORTABLE</li>
+				</ul>
+				<h2 id="scripting-winget">编写 winget 脚本</h2>
+				<p>可以编写批处理脚本和 PowerShell 脚本来安装多个应用程序。</p>
+				<pre><code class="lang-CMD">@echo off  
+Echo Install Powertoys and Terminal  
+REM Powertoys  
+winget install Microsoft.Powertoys  
+if %ERRORLEVEL% EQU 0 Echo Powertoys installed successfully.  
+REM Terminal  
+winget install Microsoft.WindowsTerminal  
+if %ERRORLEVEL% EQU 0 Echo Terminal installed successfully.   %ERRORLEVEL%
+</code></pre>
+				<div class="NOTE">
+					<p>注意</p>
+					<p>使用脚本时，<strong>winget</strong> 会按指定顺序启动应用程序。 当安装程序返回成功或失败时，<strong>winget</strong> 会启动下一个安装程序。
+						如果某个安装程序启动了另一进程，它可能会提前返回到 <strong>winget</strong>。 这会导致 <strong>winget</strong>
+						在上一个安装程序完成之前安装下一个安装程序。</p>
+				</div>
+				<h2 id="debugging-and-troubleshooting">调试和故障排除</h2>
+				<p>winget 提供日志记录来帮助诊断问题。 有关日志记录的故障排除和详细信息，请参阅<a href="troubleshooting"
+						data-linktype="relative-path">调试和故障排除</a>。</p>
+				<h2 id="missing-tools">缺少工具</h2>
+				<p>如果<a href="../package/repository" data-linktype="relative-path">社区存储库</a>不包含你的工具或应用程序，请将包提交到我们的<a
+						href="https://github.com/microsoft/winget-pkgs" data-linktype="external">存储库</a>。
+					添加你最喜爱的工具后，你和其他人都可以使用它。</p>
+				<h2 id="customize-winget-settings">自定义 winget 设置</h2>
+				<p>可以通过修改 settings.json 文件配置 winget 命令行体验 。 有关详细信息，请参阅 <a href="https://aka.ms/winget-settings"
+						data-linktype="external">https://aka.ms/winget-settings</a>。 请注意，这些设置仍处于试验状态，并且尚未针对工具的预览版本最后确定。
+				</p>
+				<h2 id="open-source-details">开源详细信息</h2>
+				<p>winget 工具是 GitHub 上的存储库 <a href="https://github.com/microsoft/winget-cli/"
+						data-linktype="external">https://github.com/microsoft/winget-cli/</a> 中提供的一个开源软件。 用于构建客户端的源代码位于
+					<a href="https://github.com/microsoft/winget-cli/tree/master/src" data-linktype="external">src
+						文件夹</a>中。
+				</p>
+				<p><strong>winget</strong> 的源代码包含在 Visual Studio 2019 C++ 解决方案中。 若要正确构建解决方案，请安装最新的<a
+						href="https://visualstudio.microsoft.com/downloads/" data-linktype="external">包含 C++ 工作负荷的
+						Visual Studio</a>。</p>
+				<p>我们鼓励你为 GitHub 上的 <strong>winget</strong> 源代码贡献力量。 你必须先同意并签署 Microsoft CLA。</p>
+				<h2 id="troubleshooting">疑难解答</h2>
+				<p>winget-cli 存储库中有常见问题和常见错误的列表，还有相关解决方法建议：</p>
+				<ul>
+					<li><a href="https://github.com/microsoft/winget-cli/tree/master/doc/troubleshooting#common-issues"
+							data-linktype="external">常见问题 - 无法识别、无法运行、应用安装程序版本或 PATH 变量需要更新</a></li>
+					<li><a href="https://github.com/microsoft/winget-cli/tree/master/doc/troubleshooting#common-errors"
+							data-linktype="external">常见错误 - 错误 0x801901a0、0x80d03002、0x80070490</a></li>
+				</ul>
+				</div>
+			</blockquote>
+		</details>
+		</details>
+		</div> <!-- /* 行内内容向左侧边对齐。 */ -->
+		<div style="text-align:center"> <!-- /* 行内内容居中。 */ -->
+			<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+			<br>
+			<li><strong>👇<a href="https://blog.csdn.net/hong_taizi/article/details/90690595"
+						title="Windows如何查看系统是ARM64还是X64架构_怎么看是不是arm_蚯蚓哥的博客-CSDN博客 ">Windows如何查看系统是ARM64还是X64架构_怎么看是不是arm?</a>
+				</strong></li>
+			<blockquote>
+				<a href="https://blog.csdn.net/hong_taizi/article/details/90690595"
+					title="Windows如何查看系统是ARM64还是X64架构_怎么看是不是arm_蚯蚓哥的博客-CSDN博客 ">CMD:systeminfo</a>>>
+				<a href="https://www.codenong.com/2000638/"
+					title="关于Windows：桌面路径的环境变量是什么？ | 码农家园">%UserProfile%\Desktop\info.txt</a><br>
+				systeminfo>>d:\info.txt
+			</blockquote>
+			<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+			<li><a href="https://www.freedidi.com/" title="零度解说 - 零度博客">
+					<font color="#FC1205"><strong>零度解说</strong></font>
+				</a>：</li><br>
+			👇<strong><a href="https://www.freedidi.com/6075.html" title="如何使用免费白嫖到的甲骨文VPS？零度解说 - 零度博客">零度解说</a> | <a
+					href="https://pan.baidu.com/s/1RqYyTKpcx0vHu8-Z1_hAWg?pwd=pncv"
+					title="永久免费的甲骨文云服务器该怎么用？零度解说.mp4">永久免费的甲骨文云服务器该怎么用？.mp4</a></strong>
+			<blockquote>
+				👉链接: <a href="https://pan.baidu.com/s/1RqYyTKpcx0vHu8-Z1_hAWg?pwd=pncv"
+					title="永久免费的甲骨文云服务器该怎么用？零度解说.mp4">https://pan.baidu.com/s/1RqYyTKpcx0vHu8-Z1_hAWg?pwd=pncv</a><br>
+				👆提取码: pncv <br>
+				复制这段内容后打开百度网盘手机App，操作更方便哦 <br>
+				--来自百度网盘超级会员v2的分享
+			</blockquote>
+			<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+			<details>
+				<summary><a href="https://github.com/inchoong/go/issues/12"><strong>VOA和RFA | 推荐的免费VPN-----nthlink ·
+							Issue #12 ·
+							inchoong/go</a></strong><br>
+					<br>
+				</summary>
+				（<a href="https://github.com/yinghuocho/firefly-proxy/issues">Issues · yinghuocho/firefly-proxy</a>）<br>
+				<br>
+				<hr style="height:1px;width:15%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				<li><a href="https://www.bing.com/search?q=https%3A%2F%2Fs3.amazonaws.com%2Fpsiphon%2F&mkt=zh-CN">https://s3.amazonaws.com/psiphon/
+						- Bing 搜索</a></li><br>
+				<hr style="height:1px;width:15%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				<li><a href="https://www.voachinese.com/subscribe.html">加入订阅名单|美国之音中文网电子新闻</a></li>
+				<br>
+				<hr style="height:1px;width:15%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				<li><a href="https://www.voachinese.com/p/5985.html">VOA卫视卫星数据 - 美国之音中文网</a></li>
+				<br>
+				<hr style="height:1px;width:15%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				<li><a href="https://www.voachinese.com/p/5869.html">如何收听VOA短波广播 - 美国之音中文网</a></li>
+				<br>
+				<hr style="height:1px;width:15%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				<li><a href="https://www.voachinese.com/p/program-schedule.html">美国之音中文电视广播节目表及广播频率表 - 美国之音中文网</a></li>
+				<br>
+				<hr style="height:1px;width:15%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				<li><a href="https://www.voachinese.com/VOAapps">美国之音手机应用程序 - 美国之音中文网</a></li>
+				<br>
+				<hr style="height:1px;width:15%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				<li><a href="https://www.voachinese.com/p/4889.html">上网办法 - 美国之音中文网</a>:</li>
+				<br>
+				<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				<li> 👉
+					<a href="https://www.voachinese.com/p/5985.html" title="美国之音中文网 - VOA卫视卫星数据 - 美国之音中文网">美国之音VOA</a>
+					和
+					<a href="https://www.rfa.org/mandarin/about/powangxilie-cite" title="破网系列 — RFA普通话主页">自由亚洲RFA</a>
+					| 推荐的免费VPN：
+					<a href="https://s3.us-west-1.amazonaws.com/dwo-jar-kmf-883/download.html">nthLink</a> |
+					http://bit.ly/download-nthLink
+				</li>
+				<br>
+				<hr style="height:1px;width:15%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				应用程序商店:<br>
+				<hr style="height:1px;width:10%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				(iOS版) <a href="https://apps.apple.com/us/app/nthlink/id1467297604">nthLink on the App Store</a> |
+				https://bit.ly/iOSnthLink <br>
+				<br>
+				(安卓版) <a href="https://play.google.com/store/apps/details?id=com.nthlink.android.client">nthLink -
+					Google
+					Play 上的应用</a> | http://bit.ly/nthLinkVOA <br>
+				<br>
+				(APK下载)<a href="https://apkpure.com/cn/nthlink/com.nthlink.android.client">nthLink安卓版应用APK下载</a> | <a
+					href="https://play.google.com/store/apps/details?id=com.nthlink.android.client&gl=US">nthLink -
+					Google
+					Play 上的应用</a><br>
+				<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" /><br>
+				<li>赛风3 (Psiphon3)</li>
+				<a href="https://s3.amazonaws.com/psiphon/web/u1dy-me41-s9yv/zh/index.html">Psiphon | 适用于 Windows
+					和移动设备的无审查互联网访问</a><br>
+				https://bit.ly/download-psiphon<br>
+				<a href="https://s3.amazonaws.com/psiphon/web/u1dy-me41-s9yv/zh/download.html#direct">Psiphon | 下载
+					Android
+					应用和 Windows 客户端</a><br>
+				您也可以发送电子邮件到 wangluo@saifeng3.com(可不填主题和内容)索取软件。
+				<br><br>
+				<hr style="height:1px;width:8%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+				<a href="https://www.psiphon.ca/"><strong>Psiphon 赛风 官网</strong> | 未经审查的 Windows 和移动互联网访问</a> <br>
+				Psiphon Inc. @<a href="https://github.com/Psiphon-Inc">Github</a>
+				<li><a href="https://s3.amazonaws.com/www.psiphon3.net/zh/nav/nav.html">Psiphon | 导航</a>:</li>
+				<li><a href="https://s3.amazonaws.com/www.psiphon3.net/zh/psiphon-guide.html">Psiphon | 赛风指南</a></li>
+				<li><a href="https://s3.amazonaws.com/www.psiphon3.net/zh/faq.html">Psiphon | 常见问题与解答</a></li>
+				<li><a href="https://s3.amazonaws.com/www.psiphon3.net/zh/blog/index.html">Psiphon | 赛风团队博客</a></li>
+				<li><a href="https://s3.amazonaws.com/www.psiphon3.net/zh/open-source.html">Psiphon | 开放源代码</a></li>
+				<li><a href="https://s3.amazonaws.com/www.psiphon3.net/zh/about.html">Psiphon | 关于我们</a></li>
+				<li><a href="https://s3.amazonaws.com/www.psiphon3.net/zh/download.html">Psiphon | 下载 Android 应用和
+						Windows
+						客户端</a></li><br>
+				<hr style="height:1px;width:35%;border:none;border-top:1px dashed #0066CC;" />
+				<br>
+			</details>
+			<details>
+				<summary>
+					<p alibgcolor="#FFFFFF" text="#000000" align="center">
+						<img border="0" src="https://go.choong.net/1024/1024.ico" alt="❤To 1024 >> 草榴社區 - t66y.com"
+							width="15" height="15"><a href="https://go.choong.net/1024/"> To ❤ 1024 >></a>
+					</p>
+				</summary>
+				<div align="center">
+					<details>
+						<summary>
+							<font color="#FF0000">
+								<b><a href="../google/" title="感谢 Google © 2010 👍 不作恶 - Don't be evil">警告</a>
+									/ <a href="Sindex.html"> WARNING </a></b></br>
+							</font>
+						</summary>
+						<a href="https://github.com/taoste/Hello-World/tree/master/Tools/hosts"
+							title="Tools/hosts">Tools/hosts</a>:
+						<table>
+							<tr>
+								<td>DNS >> <a href="https://bgp.he.net/dns/t66y.com" title="">https://t66y.com</a> </td>
+								<td>dns: </br>104.25.32.112</br>104.25.31.112</td>
+							</tr>
+							<tr>
+								<td>
+									Win徽标键 + R，打开-->运行：cmd (以管理员身份运行)</br></br>
+									notepad %SystemRoot%\System32\drivers\etc\hosts</br></br>
+									ipconfig /release 释放ip</br>
+									ipconfig /renew 重新获取ip</br>
+									ipconfig /flushdns 清除系统DNS缓存 </td>
+								<td>
+									#草榴社區 官网（网址： <a href="https://t66y.com" title="">https://t66y.com</a>）</br>
+									# 查询IP方式 （ <a
+										href="https://bgp.he.net/dns/t66y.com">https://bgp.he.net/dns/t66y.com</a>）</br>
+									172.67.74.241 t66y.com</br>
+									104.26.10.160 t66y.com</br>
+									104.26.11.160 t66y.com</br>
+									2606:4700:20::681A:AA0 t66y.com</br>
+									2606:4700:20::AC43:4AF1 t66y.com</br>
+									2606:4700:20::681A:BA0 t66y.com</td>
+								<td>
+									#github.com 官网（网址： <a href="https://github.com"
+										title="">https://github.com</a>）</br>
+									# 查询IP方式 （ <a href="https://bgp.he.net/dns/github.com"
+										title="">https://bgp.he.net/dns/github.com</a> ）</br>
+									192.30.255.113 github.com</td>
+							</tr>
+						</table>
+					</details>
+					<br>
+					本物品內容可能令人反感；不可將本物品內容派發，傳閱，出售，出租，交給<br>
+					或出借予年齡未滿 18 歲的人士出示，播放或播映。<br>
+					<br>
+					<font size="1" face="Verdana">This article contains material which may offernd and may not be
+						distributed, circulated, sold, hired, given, lent, shown, <br>
+						played or projected to a person under the age of 18 years. All models are 18 or
+						older. </font><br>
+				</div>
+				<p align="center">
+					<b>
+						<font size="5" face="Verdana">
+							<a href="https://t66y.com/index.php"><img border="0"
+									src="https://go.choong.net/1024/1024.gif" alt="草榴社區" width="" height="38"><br>
+								__ 滿 18 歲,
+								請按此 __</a>
+						</font>
+					</b><BR><BR>
+					<a href="https://t66y.com/" title="草榴社區 1024 t66y.com">t66y.com</a>
+					<a href="https://github.com/taoste/Hello-World/blob/master/eBook/t66y.com/ReadMe.md"
+						title="Github专题：关于 - 草榴社區 1024 t66y.com">☞</a>
+					<a href="https://t66y.com/thread0806.php?fid=7" title="技術討論區 | 草榴社區 1024 t66y.com">第7區</a> |
+					<a href="https://t66y.com/thread0806.php?fid=8" title="新時代的我們 | 草榴社區 1024 t66y.com">第8區</a> |
+					<a href="https://t66y.com/thread0806.php?fid=16" title="達蓋爾的旗幟 | 草榴社區 1024 t66y.com">第16區</a> |
+					<a href="https://t66y.com/read.rss/" title="RSS閱讀器 | 草榴社區 1024 t66y.com">RSS</a>
+				</p>
+				<hr style="height:1px;width:55%;border:none;border-top:1px dashed #0066CC;" />
+		</div> <!-- /* 行内内容居中。 */ -->
+		</details>
+		<!-- 网页悬浮音乐播放器 -->
+		<div id="QPlayer">
+			<div id="pContent">
+				<div id="player">
+					<span class="cover">
+					</span>
+					<div class="ctrl">
+						<div class="musicTag marquee">
+							<strong>Title</strong>
+							<span> - </span>
+							<span class="artist">Artist</span>
+						</div>
+						<div class="progress">
+							<div class="timer left">0:00</div>
+							<div class="contr">
+								<div class="rewind icon">
+								</div>
+								<div class="playback icon">
+								</div>
+								<div class="fastforward icon">
+								</div>
+							</div>
+							<div class="right">
+								<div class="liebiao icon">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ssBtn">
+					<div class="adf">
+					</div>
+				</div>
+			</div>
+			<ol id="playlist">
+			</ol>
+		</div>
+
+		<script src="https://go.choong.net/QPlayer/js/jquery.min.js">
+		</script>
+		<script src="https://go.choong.net/QPlayer/js/jquery.marquee.min.js">
+		</script>
+
+		<script>
+			var playlist = [{
+					title: "口弦",
+					artist: "妙子",
+					mp3: "https://go.choong.net/QPlayer/Music/妙子%20-%20口弦.mp3",
+					cover: "http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",
+				},
+				{
+					title: "滴答",
+					artist: "侃侃",
+					mp3: "https://go.choong.net/QPlayer/Music/侃侃-滴答.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "渡红尘",
+					artist: "乐桐",
+					mp3: "https://go.choong.net/QPlayer/Music/乐桐%20-%20渡红尘.mp3",
+					cover: "http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",
+				},
+				{
+					title: "花好月圆",
+					artist: "刁寒",
+					mp3: "https://go.choong.net/QPlayer/Music/刁寒-花好月圆.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "梦中的蝴蝶",
+					artist: "刁寒",
+					mp3: "https://go.choong.net/QPlayer/Music/刁寒-梦中的蝴蝶.mp3",
+					cover: "http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",
+				},
+				{
+					title: "赤道和北极",
+					artist: "卢西",
+					mp3: "https://go.choong.net/QPlayer/Music/卢西-赤道和北极.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "稳稳的幸福",
+					artist: "小柯",
+					mp3: "https://go.choong.net/QPlayer/Music/小柯-稳稳的幸福.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "但愿人长久",
+					artist: "邓丽君",
+					mp3: "https://go.choong.net/QPlayer/Music/邓丽君%20-%20但愿人长久.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "一曲相思",
+					artist: "半阳",
+					mp3: "https://go.choong.net/QPlayer/Music/半阳-一曲相思.mp3",
+					cover: "http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",
+				},
+
+				{
+					title: "传奇",
+					artist: "王菲",
+					mp3: "https://go.choong.net/QPlayer/Music/王菲-传奇.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "匆匆那年",
+					artist: "王菲",
+					mp3: "https://go.choong.net/QPlayer/Music/王菲-匆匆那年.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "天亮了",
+					artist: "韩红",
+					mp3: "https://go.choong.net/QPlayer/Music/韩红%20-%20天亮了.flac",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "黄种人",
+					artist: "谢霆锋",
+					mp3: "https://go.choong.net/QPlayer/Music/谢霆锋-黄种人.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "因为爱所以爱",
+					artist: "谢霆锋",
+					mp3: "https://go.choong.net/QPlayer/Music/谢霆锋-因为爱所以爱.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "追梦人",
+					artist: "罗大佑",
+					mp3: "https://go.choong.net/QPlayer/Music/罗大佑%20-%20追梦人.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "晚风",
+					artist: "好妹妹乐队",
+					mp3: "https://go.choong.net/QPlayer/Music/好妹妹乐队-晚风.mp3",
+					cover: "http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",
+				},
+				{
+					title: "往事只能回味",
+					artist: "好妹妹乐队",
+					mp3: "https://go.choong.net/QPlayer/Music/好妹妹乐队-往事只能回味.mp3",
+					cover: "http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",
+				},
+				{
+					title: "青城山下白素贞",
+					artist: "好妹妹乐队",
+					mp3: "https://go.choong.net/QPlayer/Music/好妹妹乐队-青城山下白素贞.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "你究竟有几个好妹妹",
+					artist: "好妹妹乐队",
+					mp3: "https://go.choong.net/QPlayer/Music/好妹妹乐队-你究竟有几个好妹妹.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "乌兰巴托的夜",
+					artist: "谭维维",
+					mp3: "https://go.choong.net/QPlayer/Music/谭维维%20-%20乌兰巴托的夜(Live).mp3",
+					cover: "http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",
+				},
+				{
+					title: "大田后生仔(女生版)",
+					artist: "温温Wendy",
+					mp3: "https://go.choong.net/QPlayer/Music/大田后生仔(女生版)_温温Wendy.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "雨花石",
+					artist: "李玉刚",
+					mp3: "https://go.choong.net/QPlayer/Music/李玉刚-雨花石.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "小酒窝",
+					artist: "林俊杰",
+					mp3: "https://go.choong.net/QPlayer/Music/林俊杰-小酒窝.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "白月光",
+					artist: "张信哲",
+					mp3: "https://go.choong.net/QPlayer/Music/张信哲-白月光.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "甘心情愿",
+					artist: "郭峰",
+					mp3: "https://go.choong.net/QPlayer/Music/郭峰-甘心情愿.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "迷茫的爱",
+					artist: "郭玲",
+					mp3: "https://go.choong.net/QPlayer/Music/郭玲-迷茫的爱.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "烟花三月",
+					artist: "童丽",
+					mp3: "https://go.choong.net/QPlayer/Music/烟花三月-童丽.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "往后余生",
+					artist: "马良/孙茜茹",
+					mp3: "https://go.choong.net/QPlayer/Music/往后余生%20-%20马良%20孙茜茹.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "越女",
+					artist: "刘子菲",
+					mp3: "https://go.choong.net/QPlayer/Music/越女-刘子菲.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "宝贝",
+					artist: "王志文",
+					mp3: "https://go.choong.net/QPlayer/Music/王志文-宝贝.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "想说爱你不容易",
+					artist: "王志文/江珊",
+					mp3: "https://go.choong.net/QPlayer/Music/江珊-想说爱你不容易.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "在人间",
+					artist: "王建房",
+					mp3: "https://go.choong.net/QPlayer/Music/王建房%20-%20在人间.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "亲亲我的小宝贝",
+					artist: "赵真/王晓婷",
+					mp3: "https://go.choong.net/QPlayer/Music/赵真&王晓婷%20-%20亲亲我的小宝贝.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "隐形的翅膀",
+					artist: "阿木",
+					mp3: "https://go.choong.net/QPlayer/Music/阿木-隐形的翅膀.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "野草闲花逢春生",
+					artist: "阮玲玉",
+					mp3: "https://go.choong.net/QPlayer/Music/阮玲玉%20-%20野草闲花逢春生.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "葬心",
+					artist: "黄莺莺",
+					mp3: "https://go.choong.net/QPlayer/Music/黄莺莺%20-%20葬心.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "青山一别",
+					artist: "海来阿木",
+					mp3: "https://go.choong.net/QPlayer/Music/海来阿木%20-%20青山一别.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "戏说人生",
+					artist: "罗文",
+					mp3: "https://go.choong.net/QPlayer/Music/罗文%20-%20戏说人生.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "天仙子",
+					artist: "谢雨欣",
+					mp3: "https://go.choong.net/QPlayer/Music/谢雨欣%20-%20天仙子.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "南山南",
+					artist: "马頔",
+					mp3: "https://go.choong.net/QPlayer/Music/马頔-南山南.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "相亲相爱一家人",
+					artist: "音浪",
+					mp3: "https://go.choong.net/QPlayer/Music/音浪%20-%20相亲相爱一家人.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "记事本",
+					artist: "周传雄",
+					mp3: "https://go.choong.net/QPlayer/Music/周传雄-记事本(Live)%20-%20live.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "越人歌(《夜宴》插曲)",
+					artist: "周迅",
+					mp3: "https://go.choong.net/QPlayer/Music/周迅%20-%20寂寞%20-%20越人歌(《夜宴》插曲).mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+
+				{
+					title: "飘雪",
+					artist: "陈慧娴",
+					mp3: "https://go.choong.net/QPlayer/Music/陈慧娴%20-%20飘雪.flac",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "千千阙歌",
+					artist: "陈慧娴",
+					mp3: "https://go.choong.net/QPlayer/Music/陈慧娴-千千阙歌.mp3",
+					cover: "http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",
+				},
+				{
+					title: "龙飞凤舞",
+					artist: "上海民族游乐团",
+					mp3: "https://go.choong.net/QPlayer/Music/上海民族游乐团%20-%20龙飞凤舞.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "时间都去哪儿了",
+					artist: "钢琴版",
+					mp3: "https://go.choong.net/QPlayer/Music/10%20-%20时间都去哪儿了（钢琴版）.mp3",
+					cover: "http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",
+				},
+				{
+					title: "心经",
+					artist: "多人合集",
+					mp3: "https://go.choong.net/QPlayer/Music/〖心静意禅〗心经（多人协作合集）%20.mp3",
+					cover: "http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",
+				},
+			];
+			var isRotate = true;
+			var autoplay = false;
+		</script>
+		<script src="https://go.choong.net/QPlayer/js/player.js">
+		</script>
+		<script>
+			function bgChange() {
+				var lis = $('.lib');
+				for (var i = 0; i < lis.length; i += 2)
+					lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+			}
+			window.onload = bgChange;
+		</script> <!-- 网页悬浮音乐播放器 -->
+	</body>
+</html>
